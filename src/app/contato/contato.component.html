@@ -1,0 +1,25 @@
+<h2>Informações do Contato:</h2>
+
+<hr/>
+<div *ngIf="contato">
+
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <div class="form-group">
+      <div class="alerta" *ngIf="!nome.valid && nome.touched">Campo obrigatório.</div>
+      <input type="text" placeholder="{{ contato['nome'] }}" ngModel name="nome" #nome="ngModel" required />
+
+      <div class="alerta" *ngIf="!sobrenome.valid && sobrenome.touched">Campo obrigatório.</div>
+      <input type="text" placeholder="{{ contato['sobrenome'] }}" ngModel name="sobrenome" #sobrenome="ngModel" required />
+
+      <div class="alerta" *ngIf="!telefone.valid && telefone.touched">Campo obrigatório.</div>
+      <input [textMask]="{mask: maskTEL}" type="text" placeholder="{{ contato['telefone'] }}" ngModel name="telefone" #telefone="ngModel" required />
+    </div>
+    <div class="alerta validacao" *ngIf="this.valida && !f.valid">Preencher todos os campos corretamente.</div>
+    <ul>
+      <li><a routerLink="/" class="botao neutro" title="Voltar"><</a></li>
+      <li><button type="submit" class="botao atualizar" title="Atualizar">a</button></li>
+      <li><a (click)="deletar(id)" routerLink="/" class="botao excluir" title="Excluir">x</a></li>
+    </ul>
+  </form>
+
+</div>

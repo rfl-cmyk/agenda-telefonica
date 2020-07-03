@@ -1,0 +1,151 @@
+html, body {
+  font-family: calibri;
+  color: rgb(71, 71, 71);
+  height: 100%;
+  min-height: 100%;
+}
+
+.full {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.agenda {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 310px;
+  min-width: 310px;
+  padding: 20px;
+  -webkit-box-shadow: 3px 6px 12px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 3px 6px 12px 0px rgba(0,0,0,0.15);
+  box-shadow: 3px 6px 12px 0px rgba(0,0,0,0.15);
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 14pt;
+  margin-bottom: 30px;
+}
+
+h1:before {
+  background: url('./assets/images/phone.png');
+  max-width: 30px;
+  width: 30px;
+  height: 32px;
+  display: block;
+  content: '';
+  background-size: cover;
+  float: left;
+  margin-right: 10px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 11pt;
+}
+
+p {
+  padding: 5px;
+}
+
+p:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+ul {
+  float: right;
+}
+
+li {
+  float: left;
+  list-style: none;
+  margin-left: 10px;
+}
+
+.botao {
+  color: #fff;
+  padding: 0 8px;
+  border-radius: 50%;
+  float: right;
+  font-size: 16pt;
+  font-weight: 500;
+  border: 0px;
+}
+
+.botao:hover {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.novo {
+  background-color: rgb(35, 192, 35);
+}
+
+.novo:hover {
+  background-color: rgb(28, 170, 28);
+}
+
+.neutro {
+  background-color: rgb(206, 206, 206);
+}
+
+.neutro:hover {
+  background-color: rgb(189, 189, 189);
+}
+
+.limpar {
+  background-color: rgb(237, 240, 84);
+  color: rgb(71, 71, 71);
+}
+
+.limpar:hover {
+  background-color: rgb(236, 240, 40);
+  color: rgb(71, 71, 71);
+}
+
+.excluir {
+  background-color: rgb(235, 37, 37);
+}
+
+.excluir:hover {
+  background-color: rgb(238, 14, 14);
+}
+
+.atualizar {
+  background-color: #00abf7;
+}
+
+.atualizar:hover {
+  background-color: #049adc;
+}
+
+input {
+  border: 0;
+  border-bottom: 1px dashed #cecece;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.ng-invalid.ng-touched {
+  border-color: red;
+}
+
+.alerta {
+  color: rgb(247, 56, 56);
+  font-size: 10pt;
+}
+
+.validacao {
+  margin-top: -30px;
+  float: right;
+}
+
+

@@ -1,0 +1,10 @@
+<h2>Contatos:</h2>
+
+<div *ngFor="let contato of contatos">
+  <hr/>
+  <p [routerLink]="['contato', contato.id]">{{ contato.nome }}<br/>
+  {{ contato.telefone }}</p>
+</div>
+
+<hr/>
+<a routerLink="/novo-contato" class="botao novo" alt="Novo Contato" title="Novo Contato">+</a>

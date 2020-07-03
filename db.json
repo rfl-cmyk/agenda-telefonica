@@ -1,0 +1,16 @@
+{
+  "contatos": [
+    {
+      "nome": "Rafael",
+      "sobrenome": "Fratus Lenh",
+      "telefone": "(16) 99638-0274",
+      "id": 1
+    },
+    {
+      "nome": "Samira",
+      "sobrenome": "Anizia",
+      "telefone": "(16) 98888-4444",
+      "id": 2
+    }
+  ]
+}
